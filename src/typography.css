@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'Manrope';
+  src: url('./assets/fonts/Manrope-Variable.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+}
+
+:root {
+  font-family: 'Manrope', 'Segoe UI', Arial, sans-serif;
+  --text-page: 28px;
+  --text-title: 18px;
+  --text-body: 14px;
+  --text-secondary: 12px;
+  --text-caption: 11px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+}
+
+.brand-tile {
+  font-family: inherit;
+}
+
+body { font-size: var(--text-body); line-height: 1.6; }
+button, input, textarea, select { line-height: 1.5; }
+h1, h2, h3, h4 { text-wrap: pretty; overflow-wrap: anywhere; }
+.page-heading { gap: var(--space-6); margin-bottom: var(--space-6); }
+.page-heading h1 { font-size: var(--text-page); line-height: 1.3; font-weight: 650; letter-spacing: -.6px; }
+.page-heading p { font-size: var(--text-secondary); line-height: 1.6; margin-top: var(--space-2); }
+.main-content { padding-top: var(--space-8); padding-bottom: 48px; }
+
+.section-heading h2, .portfolio-section h2, .roster-heading h2,
+.student-college-heading h2, .diary-list-card h2, .diary-overview h2,
+.resource-card h2, .college-group-card h2 { font-size: var(--text-title); line-height: 1.45; font-weight: 600; }
+.card-title-heading { font-size: var(--text-title); line-height: 1.45; }
+.card-title, .application-main h2, .org-practice-main h2, .approval-card-heading h2 {
+  font-size: var(--text-title); line-height: 1.45; font-weight: 650; letter-spacing: -.25px;
+}
+.application-main h2 { margin-top: var(--space-1); color: #56684a; }
+.org-practice-main h2 { margin: var(--space-2) 0; color: #728761; }
+.approval-card-heading h2 { margin-top: var(--space-1); color: #6b874c; }
+.detail-columns h3, .detail-skills h3, .history h3, .motivation h3,
+.final-review h3, .complete-form h3, .diary-entry h3, .github-projects h3,
+.student-college-apps h3, .approval-history h3 { font-size: 14px; line-height: 1.5; font-weight: 600; }
+.diary-content h4 { font-size: 13px; line-height: 1.5; font-weight: 600; margin-bottom: var(--space-2); }
+.modal-wide [data-slot=dialog-title], .modal-standard [data-slot=dialog-title] {
+  font-size: 22px; line-height: 1.4; font-weight: 650; letter-spacing: -.4px;
+}
+.section-heading { gap: var(--space-4); }
+.form-stack, .profile-form { gap: var(--space-6); }
+.form-grid { gap: var(--space-6); }
+.field { gap: var(--space-2); }
+.profile-form, .portfolio-section, .coordinator-profile,
+.application-card, .org-practice, .approval-card, .diary-entry,
+.diary-list-card, .diary-overview, .resource-card, .college-group-card { padding: var(--space-6); }
+.practices-grid, .college-groups-grid, .application-list, .organization-list,
+.approval-list, .diary-list, .diary-entries { gap: var(--space-4); }
+.form-footer, .dialog-actions { gap: var(--space-3); padding-top: var(--space-4); }
+.portfolio-section { margin-top: var(--space-6); }
+.form-footer p, .field-hint, .diary-export small, .small { font-size: var(--text-caption); line-height: 1.6; }
+[data-slot=label] { font-size: 13px; line-height: 1.5; font-weight: 600; }
+[data-slot=input], [data-slot=textarea] { font-size: var(--text-body); line-height: 1.6; }
+[data-slot=input] { height: 44px; }
+[data-slot=textarea] { padding: 10px 12px; }
+[data-slot=button] { font-size: 13px; line-height: 1.5; height: 40px; }
+[data-slot=button][data-size=sm] { font-size: var(--text-secondary); height: 34px; }
+[data-slot=button][aria-disabled=true] { opacity: .5; pointer-events: none; }
+.card-bottom [data-slot=button] { font-size: var(--text-caption); height: 34px; }
+.header-account-name b, .section-nav>button, .header-guide { font-size: var(--text-secondary); line-height: 1.5; }
+.header-account-name small { font-size: var(--text-caption); line-height: 1.5; }
+.account-menu-heading b, .account-menu-item { font-size: 13px; line-height: 1.5; }
+.account-menu-heading span { font-size: var(--text-caption); }
+.search-box input { font-size: 13px; }
+.filter-row { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: var(--space-3); margin-top: var(--space-3); }
+.filter-row select { font-size: var(--text-secondary); line-height: 1.5; padding: 10px 12px; }
+.results-heading { margin: var(--space-6) 0 var(--space-4); font-size: var(--text-secondary); line-height: 1.5; }
+.sort-control>span, .sort-trigger[data-slot=select-trigger], .sort-menu [data-slot=select-item] { font-size: var(--text-secondary); line-height: 1.5; }
+.company-name { font-size: 13px; line-height: 1.5; }
+.company-industry, .period, .place-count, .more-skills, .payment small,
+.fit-line, .skill-row [data-slot=badge] { font-size: var(--text-caption); line-height: 1.5; }
+.card-meta { font-size: var(--text-secondary); line-height: 1.5; }
+.card-top { margin-bottom: var(--space-4); }
+.skill-row { gap: 6px; margin-top: var(--space-4); }
+.period { gap: 6px; margin-top: var(--space-6); margin-bottom: var(--space-4); flex-wrap: wrap; }
+.card-bottom { padding: var(--space-4) 0; gap: var(--space-3); }
+.status-filters { gap: var(--space-2); margin: var(--space-6) 0; }
+.status-filters button { font-size: var(--text-secondary); line-height: 1.5; padding: var(--space-2) var(--space-3); }
+.status-filters button>span { font-size: var(--text-caption); }
+.status-badge, .placement-badge, .approval-badge { font-size: var(--text-caption) !important; line-height: 1.5; }
+.application-main p, .application-footer>span, .org-practice-main p, .org-practice-actions>span,
+.approval-card-heading p, .approval-card-period, .college-group-card>p, .group-period,
+.student-group-facts, .student-college-heading p, .college-group-top>span,
+.diary-list-card p, .diary-overview p, .diary-hours span, .diary-status,
+.diary-history, .history-row b, .history-row small, .github-project p,
+.candidate-heading p, .company-result dt, .company-result dd { font-size: var(--text-secondary); line-height: 1.6; }
+.detail-description, .check-list li, .motivation p, .application-message,
+.final-review p, .diary-content p, .diary-comment p,
+.college-group-card>.group-notes { font-size: 13px; line-height: 1.75; }
+.check-list { gap: var(--space-2); }
+.college-stat>span, .college-stat>small, .stat-card>span { font-size: var(--text-secondary); line-height: 1.5; }
+.roster-table th, .roster-table td { font-size: var(--text-secondary); line-height: 1.6; }
+.roster-person b, .roster-placement b { font-size: 13px; line-height: 1.5; }
+.roster-person small, .roster-placement>span, .roster-placement>small { font-size: var(--text-caption); line-height: 1.6; }
+.invite-code-line small, .group-distribution span, .group-distribution>small,
+.upload-area span, .approval-history small { font-size: var(--text-caption); line-height: 1.6; }
+.github-project b { font-size: 14px; line-height: 1.5; }
+.empty-state { gap: var(--space-3); padding: 48px var(--space-6); }
+.empty-state h2 { font-size: var(--text-title); line-height: 1.45; font-weight: 600; color: #707d60; }
+.empty-state p { font-size: var(--text-body); line-height: 1.65; max-width: 440px; }
+.role-picker-three b { font-size: var(--text-secondary); line-height: 1.5; }
+
+@media(max-width:1250px) {
+  .section-nav>button { font-size: var(--text-caption); }
+}
+@media(max-width:760px) {
+  .main-content { padding-top: var(--space-6); }
+  .page-heading { flex-wrap: wrap; gap: var(--space-4); }
+  .page-heading h1 { font-size: 26px; }
+  .section-nav>button { font-size: var(--text-secondary); }
+  .profile-form, .portfolio-section, .coordinator-profile, .application-card,
+  .org-practice, .approval-card, .diary-entry, .diary-list-card,
+  .diary-overview, .resource-card, .college-group-card { padding: 20px; }
+}
+@media(max-width:510px) {
+  .filter-row { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .filter-row select:first-child { grid-column: 1 / -1; }
+  .form-grid { grid-template-columns: 1fr; gap: var(--space-4); }
+  .form-footer { align-items: stretch; flex-direction: column; }
+  .dialog-actions { flex-wrap: wrap; }
+  .results-heading { gap: var(--space-2); }
+  .sort-trigger[data-slot=select-trigger] { width: 166px; }
+  .card-bottom { flex-wrap: wrap; }
+  .application-main { flex-wrap: wrap; }
+  .application-main>.status-badge { margin-left: 0; }
+  .status-filters button { font-size: var(--text-caption); }
+}
